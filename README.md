@@ -1,7 +1,7 @@
 # Taiko Redis Plugin
 A taiko plugin to interact with a redis database.
 ## Install redis-cli dependency
-This plugin uses redis-cli to cointeract with the redis server. It requires rediscli to be available from the command line and a redis server.
+This plugin uses redis-cli to interact with the redis server. It requires rediscli to be available from the command line and a redis server.
 ### Linux
 ```
 wget http://download.redis.io/redis-stable.tar.gz
