@@ -28,5 +28,7 @@
   "devDependencies": {
     "eslint": "^7.14.0"
   },
-  "dependencies": {}
+  "dependencies": {
+  "noderis": "^0.1.0"
+  }
 }
