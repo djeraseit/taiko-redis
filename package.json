@@ -1,0 +1,32 @@
+{
+  "name": "taiko-redis",
+  "version": "0.1.0",
+  "description": "A taiko plugin to interact with a redis server.",
+  "main": "src/index.js",
+  "author": "djeraseit",
+  "license": "MIT",
+  "keywords": [
+    "taiko",
+    "plugin",
+    "chrome",
+    "storage",
+    "redis",
+    "database",
+    "memory"
+  ],
+  "bugs": {
+    "url": "https://github.com/djeraseit/taiko-redis/issues"
+  },
+  "homepage": "https://github.com/djeraseit/taiko-redis#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djeraseit/taiko-redis.git"
+  },
+  "scripts": {
+    "lint": "eslint src/*.js"
+  },
+  "devDependencies": {
+    "eslint": "^7.14.0"
+  },
+  "dependencies": {}
+}
