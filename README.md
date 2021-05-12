@@ -11,7 +11,7 @@ This plugin uses redis-cli to cointeract with the redis server. It requires redi
 
 Add this script in a file `script.js`.
 ```javascript
-const { openBrowser, closeBrowser, click, goto, video } = require('taiko');
+const { openBrowser, closeBrowser, click, goto, redis } = require('taiko');
 
 (async () => {
   try {
@@ -24,9 +24,9 @@ const { openBrowser, closeBrowser, click, goto, video } = require('taiko');
     // Set key
     await redis.Set({key:'website',value:'https://www.linkedin.com/in/theodisbutler/'});
     // Update key with value
-    await redit.Update({key:'website',value:'https://theodis.com'});
+    await redis.Update({key:'website',value:'https://theodis.com'});
     // Delete key
-    await redit.Delete('websitekey');
+    await redis.Delete('websitekey');
     // Get key value
     await redis.Get(websitekey);
     
@@ -37,3 +37,17 @@ const { openBrowser, closeBrowser, click, goto, video } = require('taiko');
   }
 })();
 ```
+Run script with:
+`taiko script.js --plugin taiko-redis`
+
+## API
+These are the 4 available API functions
+redis.connectServer();
+redis.Ping();
+redis.Set()
+redis.Update()
+redis.Get();
+redis.disconnectServer();
+
+## License
+MIT
