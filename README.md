@@ -10,7 +10,7 @@ This plugin uses redis-cli to cointeract with the redis server. It requires redi
 ## Example
 
 Add this script in a file `script.js`.
-`
+```javascript
 const { openBrowser, closeBrowser, click, goto, video } = require('taiko');
 
 (async () => {
@@ -36,4 +36,4 @@ const { openBrowser, closeBrowser, click, goto, video } = require('taiko');
     await closeBrowser();
   }
 })();
-`
+```
