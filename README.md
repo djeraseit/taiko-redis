@@ -42,12 +42,13 @@ Run script with:
 
 ## API
 These are the 4 available API functions
+```javascript
 redis.connectServer();
 redis.Ping();
 redis.Set()
 redis.Update()
 redis.Get();
 redis.disconnectServer();
-
+```
 ## License
 MIT
